@@ -40,7 +40,7 @@ The BOM is available in documentation folder in file LCR_meter_bom.txt
 Project Schematic 
 ----------------------------
 
-![ScreenShot project sch](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/LCR_meter.png)
+![ScreenShot project sch](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/LCR_meter.png)
 
 Pin and test socket connection data are available in documentation folder in file PinoutConnectionsTables.md
 
@@ -74,11 +74,11 @@ Example Output
 
 Example output for Capacitor test 2 on a 10uF capacitor to LCD and serial monitor.
 
-![cap lcd1](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/LCRmeterlcd1.jpg)
+![cap lcd1](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/LCRmeterlcd1.jpg)
 
-![cap lcd2](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/LCD.jpg)
+![cap lcd2](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/LCD.jpg)
 
-![ScreenShot cap serail](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/LCRmeterserial.jpg)
+![ScreenShot cap serail](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/LCRmeterserial.jpg)
 
 
 C Meter
@@ -111,7 +111,7 @@ value. Therefore we solve for C.
 The result gives two values: Capacitance value and time constant to test in mS.
 The user can adjust the 10K resistor value in code variable(resistorValue) to match exact value, to improve accuracy.
 
-![ScreenShot cap test1](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/cap_test1.png)
+![ScreenShot cap test1](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/cap_test1.png)
 
 **Test 2**
 
@@ -144,14 +144,14 @@ The test displays 3 values
 * Time constant for test in mS
 * Va2 , ADC measurement from 0 to 1023 where 1023 is 5V 
 
-![ScreenShot cap test2](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/cap_test2.png)
+![ScreenShot cap test2](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/cap_test2.png)
 
 **Test 3** 
 
 
 Test 3 Range 0.0047 uF to 180 uF.
 
-![ScreenShot cap test3](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/cap3_test3.png)
+![ScreenShot cap test3](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/cap3_test3.png)
 
 A voltage divider is created to give a reference voltage,
 
@@ -189,7 +189,7 @@ This Resistance test can auto-range in both directions.
 
 So we will use a basic voltage divider to calculate the resistance. 
 
-![ScreenShot resistor](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/R_TEST.png)
+![ScreenShot resistor](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/R_TEST.png)
 
 A voltage divider is made of two Resistances (R1 and R2) in series. The output voltage in the middle point is [R2/(R1+R2)]Vin. Using this formula and knowing the value of R2 and measuring the Vout calculate the resistance of R1. 
 Vin will be 5 volts from the Arduino, We can measure Vout with one of the Arduino's analog inputs.
@@ -202,7 +202,7 @@ This tests range is from 80uH to 30,000uH. Ideally the capacitors in circuit mus
 
 As soon as the voltage on the LC circuit becomes positive, the LM393 will be floating, which can be pulled high with a pull up resistor. When the voltage on the LC circuit becomes negative, the LM393 will pull its output to ground. 
 
-![ScreenShot l](https://github.com/gavinlyonsrepo/LCR_meter/blob/master/documentation/images/L_TEST.png)
+![ScreenShot l](https://github.com/gavinlyonsrepo/LCR_meter/blob/main/documentation/images/L_TEST.png)
 
 A 5V pulse signal from Arduino is applied to the LC circuit. We charge the circuit for some time. Then we change the voltage from 5 volts directly to 0. That pulse will make the circuit resonate creating a  sinusoidal signal oscillating at the resonant frequency. The frequency is measured and later using the formulas we can obtain the inductance value. We will use the Arduino to measure the frequency and calculate the value. The resonant frequency is measured with the next equation: 
 
