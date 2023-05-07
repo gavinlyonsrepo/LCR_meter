@@ -1,0 +1,44 @@
+Partlist exported from C:/Users/me/Documents/EAGLE/projects/Arduino_projects/LCR_meter/LCR_meter.sch at 24/11/2019 18:48
+
+Part Value                 Device                         Package                 Description                          POPULARITY PROD_ID    SF_SKU    SPICEMODEL SPICEPREFIX
+C2   2uF                   C5/2.5                         C5B2.5                  CAPACITOR                                                                                  
+D1   1N4148                1N4148DO35-10                  DO35-10                 DIODE                                                                                      
+IC1  LM393                 LM393N                         DIL08                   COMPARATOR                                                                                 
+J4   LCD 16X02 I2C HD44780 I2C_STANDARD PCF8574            1X04                    SparkFun I2C Standard Pinout Header                                                        
+R1   4.7k                  R0207/10                       0207/10                 RESISTOR, European symbol                                            NONE       R          
+R2   2K                    R0207/10                       0207/10                 RESISTOR, European symbol                                            NONE       R          
+R3   20k                   R0207/10                       0207/10                 RESISTOR, European symbol                                            NONE       R          
+R4   200k                  R0207/10                       0207/10                 RESISTOR, European symbol                                            NONE       R          
+R5   1M                    R0207/10                       0207/10                 RESISTOR, European symbol                                            NONE       R          
+R6   150                   R0207/10                       0207/10                 RESISTOR, European symbol                                            NONE       R          
+R7   330                   R-EU_0207/15                   0207/15                 RESISTOR, European symbol                                                                  
+R8   4.7K                  R0207/10                       0207/10                 RESISTOR, European symbol                                            NONE       R          
+R9   10K                   R-EU_0204/7                    0204/7                  RESISTOR, European symbol                                                       R          
+R10  220                   R-EU_0204/7                    0204/7                  RESISTOR, European symbol                                                       R          
+R11  1.8K                  R-EU_0204/7                    0204/7                  RESISTOR, European symbol                                                       R          
+R12  3.1K                  R-EU_0204/7                    0204/7                  RESISTOR, European symbol                                                       R          
+R13  10K                   R-EU_0204/7                    0204/7                  RESISTOR, European symbol                                                       R          
+S1   SPST Mode button      MOMENTARY-SWITCH-SPST-PTH-12MM TACTILE_SWITCH_PTH_12MM Momentary Switch (Pushbutton) - SPST            SWCH-09185 COM-09190                       
+S2   SPST Test Button      MOMENTARY-SWITCH-SPST-PTH-12MM TACTILE_SWITCH_PTH_12MM Momentary Switch (Pushbutton) - SPST            SWCH-09185 COM-09190                       
+SV1  ZIF test Socket       IC16PL                         IC16PL                  DIL CABLE CONNECTOR                  0                                                     
+U$1  NANO                  NANO                           NANO                    Arduino Nano                                                                               
+
+
+
+>  HD44780-based LCD 16x02 with I2C PCF8574 interface module 
+>
+> Arduino NANO  micro-controller module Version 3.0
+>
+> Resistors: 2kohms, 20kohms, 200kohms, 1Mohms, 150ohm, 330ohm, 4.7Kohms X 2 ,
+> Cap Test2(10Kohm and 220ohm) , Cap Test3(10K, 3.1K, 1.8K)
+>
+> Capacitors: 2 uF non-polarized  
+>
+> Two push buttons.
+>
+> Diode: 1N4001 or IN4148
+>
+> LM393 comparator IC [datasheet](https://www.onsemi.com/pub/Collateral/LM393-D.PDF) 
+>
+> ZIF test socket 16 pin. 
+>
