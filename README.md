@@ -123,14 +123,20 @@ There is no extra resistor just the internal components of ATmega328 chip.
 
 C1 calibration(optional): 
 
-The internal analog pin capacitor to gnd (C1) varies between 20 and 30pF. unknown capacitor = Cu.
-The positive pin is set to 5V, the negative to 0V.
-VA2 = (VA3 * Cu)/(C1 + Cu).
+The internal analog pin capacitor to gnd (C1) varies between 20 and 30pF. unknown capacitor = Cu. The positive pin is set to 5V, the negative to 0V.
+
+VA2 = (VA3 * Cu)/(C1 + Cu)
+
 The value of C1 for any given Arduino board will have to be calibrated using a known cap for Cu,
 for full accuracy I set it at 24.48pF in code (CapOne) Found using equation.
-C1 = Cu * (VA3-VA2) / VA3, Where  Va2 is ADC value reported by code and VA3 is 5v or 1023.
+
+C1 = Cu * (VA3-VA2) / VA2
+
+Where  Va2 is ADC value reported by code and VA3 is 5v or 1023.
 So for a known capacitor of 103pF giving a ADC value of 801.
-So C1 = 103pf * (1023-801)/ 1023 = 28.48pF.
+
+C1 = 103pf * (1023-801)/ 801 = 28.48pF.
+
 The user should change this for their system to improve accuracy.
 Test a known cap get ADC value and then pop these values into equation above
 and put the C1 value into (CapOne) variable in code.
